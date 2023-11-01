@@ -138,6 +138,7 @@ namespace ProjetoC
             this.txtcompromisso.Name = "txtcompromisso";
             this.txtcompromisso.Size = new System.Drawing.Size(100, 26);
             this.txtcompromisso.TabIndex = 9;
+            this.txtcompromisso.TextChanged += new System.EventHandler(this.txtcompromisso_TextChanged);
             // 
             // txtpreco
             // 

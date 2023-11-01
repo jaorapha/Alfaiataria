@@ -22,19 +22,14 @@ namespace ProjetoC
             try
             {
 
-
                 if (txtUsuario.Text == "administrador" && txtSenha.Text == "adm")
                 {
                     Menu telademenu = new Menu();
                     telademenu.Show();
-
-
-
                 }
                 else if (txtUsuario.Text == "" && txtSenha.Text == "")
                 {
                     MessageBox.Show("Você não preencheu um dos campos", "Erro", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
-
                 }
 
                 else if (txtUsuario.Text != "administrador")
@@ -47,10 +42,12 @@ namespace ProjetoC
                 else if (txtUsuario.Text == "administrador" && txtSenha.Text == "")
                 {
                     MessageBox.Show("O campo senha não foi preenchido", "Erro", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                    txtSenha.Focus();
                 }
                 else if (txtUsuario.Text == "" && txtSenha.Text == "adm")
                 {
                     MessageBox.Show("O campo usuário não foi preenchido", "Erro", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                    txtUsuario.Focus();
                 }
 
                 else
@@ -60,6 +57,11 @@ namespace ProjetoC
 
             }
             catch { };
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+         
         }
     }
 }

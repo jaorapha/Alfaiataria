@@ -39,7 +39,7 @@ namespace ProjetoC
                     MySqlCommand comando = new MySqlCommand("insert into agendamento(nome,dtAgendamento,horario,compromisso,preco) values('" + txtnome.Text + "','" + txtdtagendamento.Text + "','" + txthorario.Text + "','" + txtcompromisso.Text + "'," + txtpreco.Text + ");", meuSql);
                     comando.ExecuteNonQuery();
 
-                    MessageBox.Show("Certo", "O agendamento foi feito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("O agendamento foi feito", "Certo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtnome.Text = "";
                     txtdtagendamento.Text = "";
                     txthorario.Text = "";
@@ -56,6 +56,11 @@ namespace ProjetoC
         }
 
         private void agendamento_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtcompromisso_TextChanged(object sender, EventArgs e)
         {
 
         }
