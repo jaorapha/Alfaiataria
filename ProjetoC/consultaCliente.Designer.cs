@@ -44,6 +44,7 @@ namespace ProjetoC
             this.btnAltearar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.txtcodigocliente = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,14 +63,14 @@ namespace ProjetoC
             this.dgvCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCliente.Location = new System.Drawing.Point(12, 89);
             this.dgvCliente.Name = "dgvCliente";
-            this.dgvCliente.Size = new System.Drawing.Size(585, 254);
+            this.dgvCliente.Size = new System.Drawing.Size(385, 257);
             this.dgvCliente.TabIndex = 1;
             this.dgvCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellContentClick);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(638, 143);
+            this.label2.Location = new System.Drawing.Point(450, 139);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 2;
@@ -78,7 +79,7 @@ namespace ProjetoC
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(638, 169);
+            this.label3.Location = new System.Drawing.Point(450, 165);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(34, 13);
             this.label3.TabIndex = 3;
@@ -87,7 +88,7 @@ namespace ProjetoC
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(603, 199);
+            this.label4.Location = new System.Drawing.Point(415, 195);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 13);
             this.label4.TabIndex = 4;
@@ -96,7 +97,7 @@ namespace ProjetoC
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(638, 228);
+            this.label5.Location = new System.Drawing.Point(450, 224);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(27, 13);
             this.label5.TabIndex = 5;
@@ -105,7 +106,7 @@ namespace ProjetoC
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(638, 259);
+            this.label6.Location = new System.Drawing.Point(450, 255);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(31, 13);
             this.label6.TabIndex = 6;
@@ -113,42 +114,42 @@ namespace ProjetoC
             // 
             // txtdatanasc
             // 
-            this.txtdatanasc.Location = new System.Drawing.Point(729, 199);
+            this.txtdatanasc.Location = new System.Drawing.Point(541, 195);
             this.txtdatanasc.Name = "txtdatanasc";
             this.txtdatanasc.Size = new System.Drawing.Size(150, 20);
             this.txtdatanasc.TabIndex = 7;
             // 
             // txtidade
             // 
-            this.txtidade.Location = new System.Drawing.Point(729, 169);
+            this.txtidade.Location = new System.Drawing.Point(541, 165);
             this.txtidade.Name = "txtidade";
             this.txtidade.Size = new System.Drawing.Size(150, 20);
             this.txtidade.TabIndex = 8;
             // 
             // txtnome
             // 
-            this.txtnome.Location = new System.Drawing.Point(729, 136);
+            this.txtnome.Location = new System.Drawing.Point(541, 132);
             this.txtnome.Name = "txtnome";
             this.txtnome.Size = new System.Drawing.Size(150, 20);
             this.txtnome.TabIndex = 9;
             // 
             // txtcpf
             // 
-            this.txtcpf.Location = new System.Drawing.Point(729, 228);
+            this.txtcpf.Location = new System.Drawing.Point(541, 224);
             this.txtcpf.Name = "txtcpf";
             this.txtcpf.Size = new System.Drawing.Size(150, 20);
             this.txtcpf.TabIndex = 10;
             // 
             // txtsexo
             // 
-            this.txtsexo.Location = new System.Drawing.Point(729, 259);
+            this.txtsexo.Location = new System.Drawing.Point(541, 255);
             this.txtsexo.Name = "txtsexo";
             this.txtsexo.Size = new System.Drawing.Size(150, 20);
             this.txtsexo.TabIndex = 11;
             // 
             // btnAltearar
             // 
-            this.btnAltearar.Location = new System.Drawing.Point(652, 320);
+            this.btnAltearar.Location = new System.Drawing.Point(403, 298);
             this.btnAltearar.Name = "btnAltearar";
             this.btnAltearar.Size = new System.Drawing.Size(177, 48);
             this.btnAltearar.TabIndex = 12;
@@ -159,7 +160,7 @@ namespace ProjetoC
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(649, 110);
+            this.label7.Location = new System.Drawing.Point(461, 106);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(16, 13);
             this.label7.TabIndex = 13;
@@ -168,10 +169,19 @@ namespace ProjetoC
             // txtcodigocliente
             // 
             this.txtcodigocliente.Enabled = false;
-            this.txtcodigocliente.Location = new System.Drawing.Point(729, 107);
+            this.txtcodigocliente.Location = new System.Drawing.Point(541, 103);
             this.txtcodigocliente.Name = "txtcodigocliente";
             this.txtcodigocliente.Size = new System.Drawing.Size(150, 20);
             this.txtcodigocliente.TabIndex = 14;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(607, 298);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(197, 48);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Excluir";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // consultaCliente
             // 
@@ -179,6 +189,7 @@ namespace ProjetoC
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(208)))));
             this.ClientSize = new System.Drawing.Size(947, 516);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtcodigocliente);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnAltearar);
@@ -220,5 +231,6 @@ namespace ProjetoC
         private System.Windows.Forms.Button btnAltearar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtcodigocliente;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -20,6 +20,11 @@ namespace ProjetoC
 
         private void consultaEstoque_Load(object sender, EventArgs e)
         {
+            CarregarBanco();
+        }
+
+        private void CarregarBanco()
+        {
             MySqlConnection meuSql = new MySqlConnection("server=localhost;database=bdAlfaiataria;uid=root;pwd=jhon");
             meuSql.Open();
 
@@ -29,4 +34,8 @@ namespace ProjetoC
             dgvEstoque.DataSource = dt;
         }
     }
-}
+
+
+
+
+}  
