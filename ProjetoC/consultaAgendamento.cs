@@ -60,10 +60,8 @@ namespace ProjetoC
             txtpreco.Text = dgvAgendamento.Rows[e.RowIndex].Cells[5].Value.ToString();
         }
 
-        private void btnaltera_Click(object sender, EventArgs e)
-        {
-           
-        }
+
+     
 
         private void btnexcluir_Click(object sender, EventArgs e)
         {
