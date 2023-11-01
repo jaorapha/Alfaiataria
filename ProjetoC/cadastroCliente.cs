@@ -52,10 +52,5 @@ namespace ProjetoC
                 MessageBox.Show("Verifique onde você escreveu isso " + ex.Message, "Algo deu errado" ,MessageBoxButtons.OKCancel,MessageBoxIcon.Error);
             }
         }
-
-        private void cadastroCliente_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

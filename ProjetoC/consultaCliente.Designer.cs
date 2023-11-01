@@ -44,7 +44,7 @@ namespace ProjetoC
             this.btnAltearar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.txtcodigocliente = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnalterar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.SuspendLayout();
             // 
@@ -174,14 +174,15 @@ namespace ProjetoC
             this.txtcodigocliente.Size = new System.Drawing.Size(150, 20);
             this.txtcodigocliente.TabIndex = 14;
             // 
-            // button1
+            // btnalterar
             // 
-            this.button1.Location = new System.Drawing.Point(607, 298);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(197, 48);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Excluir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnalterar.Location = new System.Drawing.Point(607, 298);
+            this.btnalterar.Name = "btnalterar";
+            this.btnalterar.Size = new System.Drawing.Size(197, 48);
+            this.btnalterar.TabIndex = 15;
+            this.btnalterar.Text = "Excluir";
+            this.btnalterar.UseVisualStyleBackColor = true;
+            this.btnalterar.Click += new System.EventHandler(this.btnalterar_Click);
             // 
             // consultaCliente
             // 
@@ -189,7 +190,7 @@ namespace ProjetoC
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(208)))));
             this.ClientSize = new System.Drawing.Size(947, 516);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnalterar);
             this.Controls.Add(this.txtcodigocliente);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnAltearar);
@@ -231,6 +232,6 @@ namespace ProjetoC
         private System.Windows.Forms.Button btnAltearar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtcodigocliente;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnalterar;
     }
 }

@@ -61,5 +61,27 @@ namespace ProjetoC
             txtpreco.Text = dgvEncomenda.Rows[e.RowIndex].Cells[5].Value.ToString();
 
         }
+
+        private void btnexcluir_Click(object sender, EventArgs e)
+        {
+            DialogResult caixaMensagem = MessageBox.Show("Deseja mesmo fazer excluir esse dados", "Aviso", MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation);
+
+            if (caixaMensagem == DialogResult.Yes)
+            {
+                string conexao = "server=localhost;database=bdAlfaiataria;uid=root;pwd=jhon";
+                MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
+                conexaoMYSQL.Open();
+                MySqlCommand comando = new MySqlCommand("delete from encomenda  where idEncomenda=" + txtcodigoencomenda.Text + ";", conexaoMYSQL);
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Dados excluidos", "Ação feita", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtnome.Text = "";
+                txtmedidas.Text = "";
+                txtproduto.Text = "";
+                txtdiaentrega.Text = "";
+                txthorarioentrega.Text = "";
+                txtpreco.Text = "";
+                CarregaBanco();
+            }
+        }
     } 
 }

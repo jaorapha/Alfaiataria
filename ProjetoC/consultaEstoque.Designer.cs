@@ -38,13 +38,13 @@ namespace ProjetoC
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtcodigo = new System.Windows.Forms.TextBox();
+            this.txtnome = new System.Windows.Forms.TextBox();
+            this.txtQtd = new System.Windows.Forms.TextBox();
+            this.txtfornecedor = new System.Windows.Forms.TextBox();
+            this.txtcomprimento = new System.Windows.Forms.TextBox();
+            this.txtcor = new System.Windows.Forms.TextBox();
+            this.txtpreco = new System.Windows.Forms.TextBox();
             this.btnalterar = new System.Windows.Forms.Button();
             this.btnexcluir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEstoque)).BeginInit();
@@ -67,6 +67,7 @@ namespace ProjetoC
             this.dgvEstoque.Name = "dgvEstoque";
             this.dgvEstoque.Size = new System.Drawing.Size(355, 264);
             this.dgvEstoque.TabIndex = 1;
+            this.dgvEstoque.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEstoque_CellContentClick);
             // 
             // label2
             // 
@@ -138,54 +139,54 @@ namespace ProjetoC
             this.label8.TabIndex = 8;
             this.label8.Text = "Id";
             // 
-            // textBox1
+            // txtcodigo
             // 
-            this.textBox1.Location = new System.Drawing.Point(534, 117);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(117, 20);
-            this.textBox1.TabIndex = 9;
+            this.txtcodigo.Location = new System.Drawing.Point(534, 117);
+            this.txtcodigo.Name = "txtcodigo";
+            this.txtcodigo.Size = new System.Drawing.Size(117, 20);
+            this.txtcodigo.TabIndex = 9;
             // 
-            // textBox2
+            // txtnome
             // 
-            this.textBox2.Location = new System.Drawing.Point(534, 152);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(117, 20);
-            this.textBox2.TabIndex = 10;
+            this.txtnome.Location = new System.Drawing.Point(534, 152);
+            this.txtnome.Name = "txtnome";
+            this.txtnome.Size = new System.Drawing.Size(117, 20);
+            this.txtnome.TabIndex = 10;
             // 
-            // textBox3
+            // txtQtd
             // 
-            this.textBox3.Location = new System.Drawing.Point(534, 191);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(117, 20);
-            this.textBox3.TabIndex = 11;
+            this.txtQtd.Location = new System.Drawing.Point(534, 191);
+            this.txtQtd.Name = "txtQtd";
+            this.txtQtd.Size = new System.Drawing.Size(117, 20);
+            this.txtQtd.TabIndex = 11;
             // 
-            // textBox4
+            // txtfornecedor
             // 
-            this.textBox4.Location = new System.Drawing.Point(534, 230);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(117, 20);
-            this.textBox4.TabIndex = 12;
+            this.txtfornecedor.Location = new System.Drawing.Point(534, 230);
+            this.txtfornecedor.Name = "txtfornecedor";
+            this.txtfornecedor.Size = new System.Drawing.Size(117, 20);
+            this.txtfornecedor.TabIndex = 12;
             // 
-            // textBox5
+            // txtcomprimento
             // 
-            this.textBox5.Location = new System.Drawing.Point(534, 270);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(117, 20);
-            this.textBox5.TabIndex = 13;
+            this.txtcomprimento.Location = new System.Drawing.Point(534, 270);
+            this.txtcomprimento.Name = "txtcomprimento";
+            this.txtcomprimento.Size = new System.Drawing.Size(117, 20);
+            this.txtcomprimento.TabIndex = 13;
             // 
-            // textBox6
+            // txtcor
             // 
-            this.textBox6.Location = new System.Drawing.Point(534, 311);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(117, 20);
-            this.textBox6.TabIndex = 14;
+            this.txtcor.Location = new System.Drawing.Point(534, 311);
+            this.txtcor.Name = "txtcor";
+            this.txtcor.Size = new System.Drawing.Size(117, 20);
+            this.txtcor.TabIndex = 14;
             // 
-            // textBox7
+            // txtpreco
             // 
-            this.textBox7.Location = new System.Drawing.Point(534, 351);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(117, 20);
-            this.textBox7.TabIndex = 15;
+            this.txtpreco.Location = new System.Drawing.Point(534, 351);
+            this.txtpreco.Name = "txtpreco";
+            this.txtpreco.Size = new System.Drawing.Size(117, 20);
+            this.txtpreco.TabIndex = 15;
             // 
             // btnalterar
             // 
@@ -195,6 +196,7 @@ namespace ProjetoC
             this.btnalterar.TabIndex = 16;
             this.btnalterar.Text = "Alterear";
             this.btnalterar.UseVisualStyleBackColor = true;
+            this.btnalterar.Click += new System.EventHandler(this.btnalterar_Click);
             // 
             // btnexcluir
             // 
@@ -204,6 +206,7 @@ namespace ProjetoC
             this.btnexcluir.TabIndex = 17;
             this.btnexcluir.Text = "Exlcuir";
             this.btnexcluir.UseVisualStyleBackColor = true;
+            this.btnexcluir.Click += new System.EventHandler(this.btnexcluir_Click);
             // 
             // consultaEstoque
             // 
@@ -213,13 +216,13 @@ namespace ProjetoC
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnexcluir);
             this.Controls.Add(this.btnalterar);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtpreco);
+            this.Controls.Add(this.txtcor);
+            this.Controls.Add(this.txtcomprimento);
+            this.Controls.Add(this.txtfornecedor);
+            this.Controls.Add(this.txtQtd);
+            this.Controls.Add(this.txtnome);
+            this.Controls.Add(this.txtcodigo);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -249,13 +252,13 @@ namespace ProjetoC
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtcodigo;
+        private System.Windows.Forms.TextBox txtnome;
+        private System.Windows.Forms.TextBox txtQtd;
+        private System.Windows.Forms.TextBox txtfornecedor;
+        private System.Windows.Forms.TextBox txtcomprimento;
+        private System.Windows.Forms.TextBox txtcor;
+        private System.Windows.Forms.TextBox txtpreco;
         private System.Windows.Forms.Button btnexcluir;
         private System.Windows.Forms.Button btnalterar;
     }

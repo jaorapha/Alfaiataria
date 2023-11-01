@@ -46,7 +46,7 @@ namespace ProjetoC
             this.btnAlterar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.txtcodigoencomenda = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnexcluir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEncomenda)).BeginInit();
             this.SuspendLayout();
             // 
@@ -191,14 +191,15 @@ namespace ProjetoC
             this.txtcodigoencomenda.Size = new System.Drawing.Size(100, 20);
             this.txtcodigoencomenda.TabIndex = 16;
             // 
-            // button1
+            // btnexcluir
             // 
-            this.button1.Location = new System.Drawing.Point(427, 358);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(217, 69);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Excluir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnexcluir.Location = new System.Drawing.Point(427, 358);
+            this.btnexcluir.Name = "btnexcluir";
+            this.btnexcluir.Size = new System.Drawing.Size(217, 69);
+            this.btnexcluir.TabIndex = 17;
+            this.btnexcluir.Text = "Excluir";
+            this.btnexcluir.UseVisualStyleBackColor = true;
+            this.btnexcluir.Click += new System.EventHandler(this.btnexcluir_Click);
             // 
             // consultaEncomendas
             // 
@@ -206,7 +207,7 @@ namespace ProjetoC
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(208)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnexcluir);
             this.Controls.Add(this.txtcodigoencomenda);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnAlterar);
@@ -252,6 +253,6 @@ namespace ProjetoC
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtcodigoencomenda;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnexcluir;
     }
 }

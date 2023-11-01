@@ -180,7 +180,6 @@ namespace ProjetoC
             this.Controls.Add(this.label1);
             this.Name = "cadastroCliente";
             this.Text = "cadastroCliente";
-            this.Load += new System.EventHandler(this.cadastroCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

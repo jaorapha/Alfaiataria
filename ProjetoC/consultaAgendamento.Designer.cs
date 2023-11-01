@@ -44,7 +44,7 @@ namespace ProjetoC
             this.txtpreco = new System.Windows.Forms.TextBox();
             this.txtcompromisso = new System.Windows.Forms.TextBox();
             this.btnAlterar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnaltera = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAgendamento)).BeginInit();
             this.SuspendLayout();
             // 
@@ -173,14 +173,15 @@ namespace ProjetoC
             this.btnAlterar.UseVisualStyleBackColor = true;
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
-            // button1
+            // btnaltera
             // 
-            this.button1.Location = new System.Drawing.Point(403, 389);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(238, 52);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Excluir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnaltera.Location = new System.Drawing.Point(403, 389);
+            this.btnaltera.Name = "btnaltera";
+            this.btnaltera.Size = new System.Drawing.Size(238, 52);
+            this.btnaltera.TabIndex = 15;
+            this.btnaltera.Text = "Excluir";
+            this.btnaltera.UseVisualStyleBackColor = true;
+            this.btnaltera.Click += new System.EventHandler(this.btnaltera_Click);
             // 
             // consultaAgendamento
             // 
@@ -188,7 +189,7 @@ namespace ProjetoC
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(208)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnaltera);
             this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.txtcompromisso);
             this.Controls.Add(this.txtpreco);
@@ -230,6 +231,6 @@ namespace ProjetoC
         private System.Windows.Forms.TextBox txtpreco;
         private System.Windows.Forms.TextBox txtcompromisso;
         private System.Windows.Forms.Button btnAlterar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnaltera;
     }
 }

@@ -39,7 +39,6 @@ namespace ProjetoC
 
         private void btnAltearar_Click(object sender, EventArgs e)
         {
-           
                 string conexao = "server=localhost;database=bdAlfaiataria;uid=root;pwd=jhon";
                 MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
                 conexaoMYSQL.Open();
@@ -68,6 +67,29 @@ namespace ProjetoC
             txtcpf.Text = dgvCliente.Rows[e.RowIndex].Cells[4].Value.ToString();
             txtsexo.Text = dgvCliente.Rows[e.RowIndex].Cells[5].Value.ToString();
 
+        }
+
+        private void btnalterar_Click(object sender, EventArgs e)
+        {
+            DialogResult caixaMensagem = MessageBox.Show("Deseja mesmo fazer excluir esse dados", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+
+            if (caixaMensagem == DialogResult.Yes)
+            {
+                string conexao = "server=localhost;database=bdAlfaiataria;uid=root;pwd=jhon";
+                MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
+                conexaoMYSQL.Open();
+                MySqlCommand comando = new MySqlCommand("delete from cliente where idCliente=" + txtcodigocliente.Text + ";", conexaoMYSQL);
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Dados excluidos", "Ação feita", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtnome.Text = "";
+                txtidade.Text = "";
+                txtidade.Text = "";
+                txtdatanasc.Text = "";
+                txtcpf.Text = "";
+                txtsexo.Text = "";
+                txtcodigocliente.Text = "";
+                CarregarBanco();
+            }
         }
     }
 }
