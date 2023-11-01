@@ -62,6 +62,11 @@ namespace ProjetoC
 
         private void btnaltera_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void btnexcluir_Click(object sender, EventArgs e)
+        {
             DialogResult caixaMensagem = MessageBox.Show("Deseja mesmo fazer excluir esse dados", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
 
             if (caixaMensagem == DialogResult.Yes)

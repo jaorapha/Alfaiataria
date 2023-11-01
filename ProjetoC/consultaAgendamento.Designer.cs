@@ -44,7 +44,7 @@ namespace ProjetoC
             this.txtpreco = new System.Windows.Forms.TextBox();
             this.txtcompromisso = new System.Windows.Forms.TextBox();
             this.btnAlterar = new System.Windows.Forms.Button();
-            this.btnaltera = new System.Windows.Forms.Button();
+            this.btnexcluir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAgendamento)).BeginInit();
             this.SuspendLayout();
             // 
@@ -173,15 +173,15 @@ namespace ProjetoC
             this.btnAlterar.UseVisualStyleBackColor = true;
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
-            // btnaltera
+            // btnexcluir
             // 
-            this.btnaltera.Location = new System.Drawing.Point(403, 389);
-            this.btnaltera.Name = "btnaltera";
-            this.btnaltera.Size = new System.Drawing.Size(238, 52);
-            this.btnaltera.TabIndex = 15;
-            this.btnaltera.Text = "Excluir";
-            this.btnaltera.UseVisualStyleBackColor = true;
-            this.btnaltera.Click += new System.EventHandler(this.btnaltera_Click);
+            this.btnexcluir.Location = new System.Drawing.Point(403, 389);
+            this.btnexcluir.Name = "btnexcluir";
+            this.btnexcluir.Size = new System.Drawing.Size(238, 52);
+            this.btnexcluir.TabIndex = 15;
+            this.btnexcluir.Text = "Excluir";
+            this.btnexcluir.UseVisualStyleBackColor = true;
+            this.btnexcluir.Click += new System.EventHandler(this.btnexcluir_Click);
             // 
             // consultaAgendamento
             // 
@@ -189,7 +189,7 @@ namespace ProjetoC
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(208)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnaltera);
+            this.Controls.Add(this.btnexcluir);
             this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.txtcompromisso);
             this.Controls.Add(this.txtpreco);
@@ -231,6 +231,6 @@ namespace ProjetoC
         private System.Windows.Forms.TextBox txtpreco;
         private System.Windows.Forms.TextBox txtcompromisso;
         private System.Windows.Forms.Button btnAlterar;
-        private System.Windows.Forms.Button btnaltera;
+        private System.Windows.Forms.Button btnexcluir;
     }
 }

@@ -44,7 +44,7 @@ namespace ProjetoC
             this.btnAltearar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.txtcodigocliente = new System.Windows.Forms.TextBox();
-            this.btnalterar = new System.Windows.Forms.Button();
+            this.btnexcluir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.SuspendLayout();
             // 
@@ -174,15 +174,15 @@ namespace ProjetoC
             this.txtcodigocliente.Size = new System.Drawing.Size(150, 20);
             this.txtcodigocliente.TabIndex = 14;
             // 
-            // btnalterar
+            // btnexcluir
             // 
-            this.btnalterar.Location = new System.Drawing.Point(607, 298);
-            this.btnalterar.Name = "btnalterar";
-            this.btnalterar.Size = new System.Drawing.Size(197, 48);
-            this.btnalterar.TabIndex = 15;
-            this.btnalterar.Text = "Excluir";
-            this.btnalterar.UseVisualStyleBackColor = true;
-            this.btnalterar.Click += new System.EventHandler(this.btnalterar_Click);
+            this.btnexcluir.Location = new System.Drawing.Point(607, 298);
+            this.btnexcluir.Name = "btnexcluir";
+            this.btnexcluir.Size = new System.Drawing.Size(197, 48);
+            this.btnexcluir.TabIndex = 15;
+            this.btnexcluir.Text = "Excluir";
+            this.btnexcluir.UseVisualStyleBackColor = true;
+            this.btnexcluir.Click += new System.EventHandler(this.btnexcluir_Click);
             // 
             // consultaCliente
             // 
@@ -190,7 +190,7 @@ namespace ProjetoC
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(253)))), ((int)(((byte)(208)))));
             this.ClientSize = new System.Drawing.Size(947, 516);
-            this.Controls.Add(this.btnalterar);
+            this.Controls.Add(this.btnexcluir);
             this.Controls.Add(this.txtcodigocliente);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnAltearar);
@@ -232,6 +232,6 @@ namespace ProjetoC
         private System.Windows.Forms.Button btnAltearar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtcodigocliente;
-        private System.Windows.Forms.Button btnalterar;
+        private System.Windows.Forms.Button btnexcluir;
     }
 }
